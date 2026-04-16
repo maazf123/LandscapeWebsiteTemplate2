@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Curated Services | The Curated Estate</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffdf9f",
+                        "primary-fixed": "#bceec8",
+                        "primary-container": "#2d5a3d",
+                        "on-tertiary-fixed": "#121e12",
+                        "surface-tint": "#3b684a",
+                        "primary-fixed-dim": "#a1d2ad",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#755700",
+                        "inverse-primary": "#a1d2ad",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#224f33",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "on-background": "#1b1c19",
+                        "surface-container": "#f0eee9",
+                        "primary": "#144227",
+                        "tertiary-container": "#475545",
+                        "on-tertiary-fixed-variant": "#3d4a3b",
+                        "on-error-container": "#93000a",
+                        "background": "#fbf9f4",
+                        "on-surface": "#1b1c19",
+                        "secondary-container": "#fece65",
+                        "surface-dim": "#dbdad5",
+                        "tertiary-fixed": "#d8e7d2",
+                        "surface-container-highest": "#e4e2dd",
+                        "on-primary-container": "#9ed0ab",
+                        "secondary-fixed-dim": "#eec058",
+                        "tertiary-fixed-dim": "#bccbb7",
+                        "on-tertiary-container": "#bac9b5",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e4e2dd",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c1c9c0",
+                        "tertiary": "#313e2f",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#30312e",
+                        "surface-container-high": "#eae8e3",
+                        "surface-container-low": "#f5f3ee",
+                        "surface": "#fbf9f4",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#00210f",
+                        "surface-bright": "#fbf9f4",
+                        "outline": "#717971",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f2f1ec",
+                        "secondary": "#795900",
+                        "on-surface-variant": "#414942",
+                        "on-secondary-fixed": "#261a00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #fbf9f4; color: #1b1c19; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .bg-biophilic-gradient { background: linear-gradient(180deg, #d0ffda 0%, #e9ffeb 100%); }
+        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<!-- Top Navigation (Shell Implementation) -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-zinc-950/80 backdrop-blur-md shadow-sm shadow-emerald-900/5">
+<div class="flex justify-between items-center px-6 md:px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif font-bold text-emerald-950 dark:text-emerald-100">The Curated Estate</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-serif text-lg tracking-wide text-emerald-800/70 dark:text-emerald-100/70 hover:text-amber-700 transition-colors duration-300" href="#">Portfolio</a>
+<a class="font-serif text-lg tracking-wide text-emerald-900 dark:text-emerald-400 border-b-2 border-amber-600 pb-1" href="#">Services</a>
+<a class="font-serif text-lg tracking-wide text-emerald-800/70 dark:text-emerald-100/70 hover:text-amber-700 transition-colors duration-300" href="#">Process</a>
+<a class="font-serif text-lg tracking-wide text-emerald-800/70 dark:text-emerald-100/70 hover:text-amber-700 transition-colors duration-300" href="#">Contact</a>
+<button class="ml-4 px-6 py-2 bg-secondary text-white rounded-xl font-medium hover:brightness-110 transition-all">Request Quote</button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary text-3xl">menu</span>
+</div>
+</div>
+</nav>
+<main>
+<!-- Top Transition Zone -->
+<section class="relative pt-32 pb-0 bg-gradient-to-b from-[#002b14] to-[#144227]">
+<div class="max-w-screen-2xl mx-auto px-12 py-20 text-center relative z-10">
+<h1 class="font-serif text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">Artisan Landscapes.</h1>
+<p class="font-body text-emerald-100/80 text-xl max-w-2xl mx-auto leading-relaxed">Cultivating high-end outdoor sanctuaries through architectural precision and organic soul.</p>
+</div>
+<!-- Organic Wave Divider -->
+<div class="relative w-full overflow-hidden leading-[0] bottom-[-1px]">
+<svg class="relative block w-full h-[150px]" data-name="Layer 1" preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C41.7,33.51,114,64,197,56.44c20.39-1.86,39.91-4.57,60.39-7.14C277.87,46.7,299.49,43.76,321.39,56.44Z" fill="#fbf9f4"></path>
+</svg>
+</div>
+</section>
+<!-- Services Content Area -->
+<section class="relative bg-biophilic-gradient min-h-screen py-24 overflow-hidden">
+<!-- Decorative Organic Blobs -->
+<div class="absolute top-20 left-[-10%] w-[400px] h-[400px] bg-[#c8fad3] opacity-40 blur-[100px] rounded-full"></div>
+<div class="absolute bottom-40 right-[-5%] w-[500px] h-[500px] bg-[#c2f4cd] opacity-30 blur-[120px] rounded-full"></div>
+<div class="max-w-screen-xl mx-auto px-6 md:px-12 relative z-10">
+<!-- Header -->
+<div class="mb-20 space-y-4 max-w-3xl">
+<h2 class="font-serif text-4xl md:text-5xl font-bold text-[#002b14] leading-tight">Our Curated Services</h2>
+<p class="font-body text-lg text-[#414942] leading-relaxed">Comprehensive estate management and design tailored to the unique ecology of New Jersey. We harmonize architecture with nature.</p>
+</div>
+<!-- Services Grid (3x2) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<!-- Lawn Care -->
+<div class="group bg-surface-container-lowest rounded-[24px] overflow-hidden shadow-[0_10px_40px_-15px_rgba(20,66,39,0.08)] flex flex-col h-full hover:shadow-[0_20px_50px_-10px_rgba(20,66,39,0.12)] transition-all duration-500">
+<div class="p-8 pb-4 flex-grow">
+<span class="material-symbols-outlined text-[#795900] text-4xl mb-6 block">yard</span>
+<h3 class="font-serif text-2xl font-bold text-primary mb-3">Lawn Care</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-6">Scientific soil management and precision manicuring to maintain lush, resilient greenspace year-round.</p>
+</div>
+<div class="h-56 w-full overflow-hidden">
+<img alt="Lawn Care" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="perfectly manicured luxury emerald green lawn with professional stripes at golden hour in a private garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNIvi3AJtVgIZHYNC7PrlF_4jiaeu69C_YhfpViikCgmCPfSoX1gl9YqPPwHB5eSkweJNV4kncg8vVZ5fRSvOTuMmrnU1tIXoT10g2MiL3Wyieuyadc-RmoS9DQpU_eGvA1-iX4pbZ2mj9OI0bWm7kqiag_5T46wumFxhTGUzYHkDoCoPOucBYuGAdaGQ4Vls75wwaF0eZU5yVzs6zgnAOvMr5L2-JvATcvO-IRFHnHrpkJNbGqvdCDKRSOmOviR1y7_oBfRhvBTk"/>
+</div>
+</div>
+<!-- Landscape Design -->
+<div class="group bg-surface-container-lowest rounded-[24px] overflow-hidden shadow-[0_10px_40px_-15px_rgba(20,66,39,0.08)] flex flex-col h-full hover:shadow-[0_20px_50px_-10px_rgba(20,66,39,0.12)] transition-all duration-500">
+<div class="p-8 pb-4 flex-grow">
+<span class="material-symbols-outlined text-[#795900] text-4xl mb-6 block">architecture</span>
+<h3 class="font-serif text-2xl font-bold text-primary mb-3">Landscape Design</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-6">Conceptual master planning that blends indigenous flora with high-end architectural aesthetics.</p>
+</div>
+<div class="h-56 w-full overflow-hidden">
+<img alt="Landscape Design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="architectural landscaping blueprint overlay on a lush modern garden with stone pathways and designer plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt8HrnIbjJKAo5jmWrBhCWI_d57FW9vsGxLYUmOArsslRdr8vvqzMenORihwiX6ljApli2cMOUWr0HpknKcnpoaIqxJ-s2ZGkw21k184Hy44ki3FTzii9fp0Mbls9MJiPqhUSVrnAcLQ2UoBIlrtpKeO7qoVqDBNBi7Plj7kzv78EfKZkYdky-hbcoiRsQwcV7QBwabENyfdanLyUD_Kbo9yH799MB0I70ol_lu1qCbVKTssBt5MpqrUNat0cv0DsGv502M4GLyC4"/>
+</div>
+</div>
+<!-- Hardscaping -->
+<div class="group bg-surface-container-lowest rounded-[24px] overflow-hidden shadow-[0_10px_40px_-15px_rgba(20,66,39,0.08)] flex flex-col h-full hover:shadow-[0_20px_50px_-10px_rgba(20,66,39,0.12)] transition-all duration-500">
+<div class="p-8 pb-4 flex-grow">
+<span class="material-symbols-outlined text-[#795900] text-4xl mb-6 block">foundation</span>
+<h3 class="font-serif text-2xl font-bold text-primary mb-3">Hardscaping</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-6">Premium stonework, custom retaining walls, and elegant patios crafted from natural limestone and granite.</p>
+</div>
+<div class="h-56 w-full overflow-hidden">
+<img alt="Hardscaping" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="luxury outdoor patio with natural stone pavers surrounded by lush green shrubs and ambient designer lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6WlccSXoFgD3P5DSJYeSsdT2kz65-1GMERGOQE0Rqsq1fmmAamls4PM6Tn2T1qGtMZofGb0yO9vuokDReky0doXV-h7CE8pFVJHz0vXcHNq2tiOshCNXwjWwxc0qNVB9tRsc5hWyQaKiWnn_rptCjwK5K0YAD5evikQGJL_bzqr3ZdupLT1Bd7eSqAqBkRE-Of4jAkj47MtawHmtvfkO7XNbJedBczwVWHiiGzk9qUn4zi4cyiUrxvbrFxQKHYqYHUopxd_2oaeY"/>
+</div>
+</div>
+<!-- Tree Services -->
+<div class="group bg-surface-container-lowest rounded-[24px] overflow-hidden shadow-[0_10px_40px_-15px_rgba(20,66,39,0.08)] flex flex-col h-full hover:shadow-[0_20px_50px_-10px_rgba(20,66,39,0.12)] transition-all duration-500">
+<div class="p-8 pb-4 flex-grow">
+<span class="material-symbols-outlined text-[#795900] text-4xl mb-6 block">park</span>
+<h3 class="font-serif text-2xl font-bold text-primary mb-3">Tree Services</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-6">Arboricultural expertise ensuring the health, safety, and sculptural beauty of your estate's canopy.</p>
+</div>
+<div class="h-56 w-full overflow-hidden">
+<img alt="Tree Services" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="tall mature forest trees with sunlight filtering through leaves casting dramatic shadows on soft forest floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPYwXFJ-IqqnLfaIkPSGNl2o3qNvSm0R58YkoLWqZ3zVZTzYSvMjcbaX0wcaHvqwKZEHXuaauHW2w5pnnBQCXRz-ybQkcRMotirXE6bkY3M0cjUZMumoSWk93myvyc1g1OqYxuVeMyzZwiQO6xcKUMaMyUSDXZfMvwiUEfkXHEQ0mqPQIcOujGlsCPsDaZ0ZQATY2OJL6DwEXKBytfMMwtqSFq8SsTifpKzn1JlvGPMb0yV4JpiEZPAGZE7hQae7ppmpqHBNH2tKM"/>
+</div>
+</div>
+<!-- Irrigation -->
+<div class="group bg-surface-container-lowest rounded-[24px] overflow-hidden shadow-[0_10px_40px_-15px_rgba(20,66,39,0.08)] flex flex-col h-full hover:shadow-[0_20px_50px_-10px_rgba(20,66,39,0.12)] transition-all duration-500">
+<div class="p-8 pb-4 flex-grow">
+<span class="material-symbols-outlined text-[#795900] text-4xl mb-6 block">opacity</span>
+<h3 class="font-serif text-2xl font-bold text-primary mb-3">Irrigation</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-6">Smart water management systems designed for peak efficiency and optimal plant hydration.</p>
+</div>
+<div class="h-56 w-full overflow-hidden">
+<img alt="Irrigation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close-up of a modern underground irrigation sprinkler misting water over flower garden in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALHjrQQ6DwbOgIcvAG3BFlmBImeE3tHFELbQunw6rIFROzJVAB3FbgQUX6AlXj-ZEhOOEKtkjv-8UtXikT5ZaFGjM96GrY57_d9OvEn3eH7OusSdRxb-LmTNWFrA_8uHnIeIhX5la65jaazmXqFouVmL3KKfAsdVksLJXziYJEk86nNcLsSvHi3vMtJpK9-JliD5dcLqyP576Yv9181E2p9vbJ9YXI7O1jQno45xQOmEKxA48q3fSTb699mPIISVQgwp4q2VGgZy0"/>
+</div>
+</div>
+<!-- Seasonal Cleanup -->
+<div class="group bg-surface-container-lowest rounded-[24px] overflow-hidden shadow-[0_10px_40px_-15px_rgba(20,66,39,0.08)] flex flex-col h-full hover:shadow-[0_20px_50px_-10px_rgba(20,66,39,0.12)] transition-all duration-500">
+<div class="p-8 pb-4 flex-grow">
+<span class="material-symbols-outlined text-[#795900] text-4xl mb-6 block">eco</span>
+<h3 class="font-serif text-2xl font-bold text-primary mb-3">Seasonal Cleanup</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-6">Meticulous transition services for Spring awakenings and Fall preparations, protecting your investment.</p>
+</div>
+<div class="h-56 w-full overflow-hidden">
+<img alt="Seasonal Cleanup" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="vibrant autumn leaves being professionally cleared from a modern flagstone garden path near architectural plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0k-LX1IRfgypj-qd6A8IrO2GZDBJltbsKaU0v41wDPHPuoGdxPzteZ2csSnvA_bh1t-tRWMaM8lOTa0jvT0PnvQerWbsi7E3MLcfx3giShWLODdtlWCISgD71el52T8hhuyqMnZgKWRGidwr0VvYPb-MYqjIU2X9ei8-MpbOUKQm8ff3cIq0yZD84oRowMBukgUmGPl3XcxhPfos6X91vdc6lZcVjKH796AYQdueFzOp5LRNWtmACkpX5ggFCutcgGg5iepL93Qo"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-emerald-950 dark:bg-black text-amber-500 w-full py-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 border-t border-emerald-900/30 pt-12 max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-serif italic text-amber-200 text-xl mb-2">The Curated Estate</div>
+<p class="font-sans text-[10px] uppercase tracking-widest text-stone-400">© 2024 The Curated Estate. High-End New Jersey Highlands Landscaping.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-sans text-xs uppercase tracking-widest text-stone-400 hover:text-amber-200 transition-colors" href="#">Privacy Policy</a>
+<a class="font-sans text-xs uppercase tracking-widest text-stone-400 hover:text-amber-200 transition-colors" href="#">Terms of Service</a>
+<a class="font-sans text-xs uppercase tracking-widest text-stone-400 hover:text-amber-200 transition-colors" href="#">Careers</a>
+<a class="font-sans text-xs uppercase tracking-widest text-stone-400 hover:text-amber-200 transition-colors" href="#">Press</a>
+</div>
+</div>
+</footer>
+</body></html>

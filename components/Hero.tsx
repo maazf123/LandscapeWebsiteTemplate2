@@ -13,7 +13,7 @@ const trustBadges = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-gradient-to-br from-primary to-primary-container">
+    <section className="relative min-h-[115vh] flex items-center justify-center pt-24 pb-[15vh] overflow-hidden bg-gradient-to-br from-primary to-primary-container">
       {/* Background Image */}
       <div className="absolute inset-0 opacity-20">
         <Image
@@ -97,6 +97,8 @@ export default function Hero() {
           ))}
         </motion.div>
       </div>
+
+      {/* No gradient here — Services section handles the full transition via overlap */}
     </section>
   );
 }

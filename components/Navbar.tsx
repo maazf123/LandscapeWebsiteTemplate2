@@ -24,10 +24,10 @@ export default function Navbar() {
   return (
     <>
       <motion.nav
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        initial={{ y: -100, opacity: 0, x: "-50%" }}
+        animate={{ y: 0, opacity: 1, x: "-50%" }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-5xl rounded-full px-6 py-3 z-50 flex justify-between items-center transition-all duration-500 ${
+        className={`fixed top-6 left-1/2 w-[92%] max-w-5xl rounded-full px-6 py-3 z-50 flex justify-between items-center transition-all duration-500 ${
           scrolled
             ? "bg-surface/90 shadow-[0_12px_32px_-4px_rgba(0,43,20,0.08)] backdrop-blur-xl"
             : "bg-surface/70 backdrop-blur-xl"

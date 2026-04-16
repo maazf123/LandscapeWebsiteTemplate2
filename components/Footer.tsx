@@ -19,7 +19,7 @@ const companyLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-inverse-surface w-full rounded-t-[2.5rem]">
+    <footer className="bg-inverse-surface w-full">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
         {/* Company Info */}
         <div className="flex flex-col gap-6">
@@ -96,7 +96,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/10 px-8 py-6">
+      <div className="px-8 py-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-inverse-on-surface/50">
           <p>&copy; {new Date().getFullYear()} Greenway Landscaping. All rights reserved.</p>
           <p>

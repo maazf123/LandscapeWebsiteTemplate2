@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Manrope:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed": "#ffdbcd",
+                      "on-secondary": "#ffffff",
+                      "surface-container": "#c8fad3",
+                      "primary-fixed-dim": "#a1d2ad",
+                      "tertiary": "#451500",
+                      "outline-variant": "#c1c9c0",
+                      "on-tertiary-container": "#e78d66",
+                      "primary-container": "#144227",
+                      "secondary": "#795900",
+                      "surface-dim": "#b4e6c0",
+                      "on-surface-variant": "#414942",
+                      "on-secondary-fixed": "#261a00",
+                      "secondary-fixed-dim": "#ecc165",
+                      "secondary-container": "#fed174",
+                      "surface-container-highest": "#bceec8",
+                      "on-error-container": "#93000a",
+                      "on-secondary-container": "#785800",
+                      "error-container": "#ffdad6",
+                      "surface": "#e9ffeb",
+                      "inverse-surface": "#07381e",
+                      "primary": "#002b14",
+                      "on-tertiary": "#ffffff",
+                      "inverse-primary": "#a1d2ad",
+                      "on-primary-fixed-variant": "#234f33",
+                      "on-surface": "#00210e",
+                      "outline": "#717971",
+                      "surface-bright": "#e9ffeb",
+                      "tertiary-container": "#652707",
+                      "background": "#e9ffeb",
+                      "inverse-on-surface": "#cafdd6",
+                      "surface-container-high": "#c2f4cd",
+                      "primary-fixed": "#bceec8",
+                      "on-primary-container": "#7faf8b",
+                      "surface-variant": "#bceec8",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed-variant": "#753313",
+                      "on-background": "#00210e",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed-variant": "#5c4300",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed": "#00210e",
+                      "secondary-fixed": "#ffdfa0",
+                      "surface-container-low": "#d0ffda",
+                      "surface-tint": "#3b6849",
+                      "tertiary-fixed-dim": "#ffb597",
+                      "on-primary": "#ffffff",
+                      "on-tertiary-fixed": "#360f00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Epilogue"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Epilogue', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container">
+<!-- Section 1: Floating Glassmorphic Pill Navbar -->
+<nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl rounded-full px-6 py-3 z-50 bg-emerald-50/70 dark:bg-emerald-950/70 backdrop-blur-xl flex justify-between items-center">
+<div class="font-['Epilogue'] font-black text-2xl text-emerald-900 dark:text-emerald-50">Greenway</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Epilogue'] font-bold tracking-tight text-lg text-emerald-800/80 dark:text-emerald-200/80 hover:text-amber-600 transition-colors duration-300" href="#">Portfolio</a>
+<a class="font-['Epilogue'] font-bold tracking-tight text-lg text-emerald-800/80 dark:text-emerald-200/80 hover:text-amber-600 transition-colors duration-300" href="#">Services</a>
+<a class="font-['Epilogue'] font-bold tracking-tight text-lg text-emerald-800/80 dark:text-emerald-200/80 hover:text-amber-600 transition-colors duration-300" href="#">Process</a>
+<a class="font-['Epilogue'] font-bold tracking-tight text-lg text-emerald-800/80 dark:text-emerald-200/80 hover:text-amber-600 transition-colors duration-300" href="#">About</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-full font-bold text-sm scale-95 active:scale-90 transition-transform hover:bg-on-secondary-container">Get a Free Quote</button>
+</nav>
+<!-- Section 2: Full-height Hero -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-gradient-to-br from-primary-container to-[#2d5a3d]">
+<div class="absolute inset-0 opacity-20">
+<img class="w-full h-full object-cover" data-alt="lush sprawling estate garden with perfectly manicured lawn and geometric stone pathways during a golden sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjCplYmjOESgs2lk26ldmRMHjFxly8N1h9fSaopecDUWQsY85vBF8k1TfDyCxp1FDy9QwHHHYa6BB_Ye4J28Ch-oRfNhnj5YnFTjzJZYXYDub5s6fR5k02JwG6xIxTJZjLbzo6V4UiBUlAItEhX8fa12RffbC6-_1jZCjGLKoEkFo448Z0vvix85ivhVSUNMERzEFeNnXs0BhfgvaArL_jj8QDZaujJRMEXBelBELHJBShKoesnUylzJYAp87kgxcNWxACrJtPE6E"/>
+</div>
+<div class="relative z-10 max-w-5xl mx-auto px-8 text-center md:text-left flex flex-col items-center md:items-start">
+<span class="text-secondary-container font-bold tracking-widest text-sm uppercase mb-4">Edison's Premier Arborists</span>
+<h1 class="text-white text-5xl md:text-7xl font-black tracking-tight leading-[1.1] mb-6">
+                Transform Your<br/>Outdoor Space
+            </h1>
+<p class="text-primary-fixed text-lg md:text-xl max-w-2xl mb-10 leading-relaxed font-body">
+                Curating organic excellence for premium estates in Edison, NJ. We blend sustainable design with architectural precision to cultivate your perfect sanctuary.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 mb-16">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold text-lg hover:bg-secondary-container transition-all">Start Your Transformation</button>
+<button class="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg backdrop-blur-sm hover:bg-white/10 transition-all">View Our Portfolio</button>
+</div>
+<!-- Trust Badges -->
+<div class="w-full flex flex-wrap justify-center md:justify-start gap-8 md:gap-12 pt-12 border-t border-white/10">
+<div class="flex items-center gap-3 text-primary-fixed/80">
+<span class="material-symbols-outlined text-secondary-container">verified_user</span>
+<span class="text-sm font-bold tracking-wide uppercase">Licensed &amp; Insured</span>
+</div>
+<div class="flex items-center gap-3 text-primary-fixed/80">
+<span class="material-symbols-outlined text-secondary-container">eco</span>
+<span class="text-sm font-bold tracking-wide uppercase">Eco-Friendly</span>
+</div>
+<div class="flex items-center gap-3 text-primary-fixed/80">
+<span class="material-symbols-outlined text-secondary-container">groups</span>
+<span class="text-sm font-bold tracking-wide uppercase">Expert Team</span>
+</div>
+<div class="flex items-center gap-3 text-primary-fixed/80">
+<span class="material-symbols-outlined text-secondary-container">workspace_premium</span>
+<span class="text-sm font-bold tracking-wide uppercase">Award Winning</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Services Grid -->
+<section class="py-24 bg-surface px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-black text-primary leading-tight mb-4">Our Curated Services</h2>
+<p class="text-on-surface-variant text-lg">Comprehensive estate management and design tailored to the unique ecology of New Jersey.</p>
+</div>
+<span class="text-secondary font-bold text-lg underline underline-offset-8 cursor-pointer hover:text-primary transition-colors">Download Service Guide</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="group bg-surface-container-lowest p-8 rounded-[1.5rem] transition-all hover:bg-surface-container-high">
+<div class="w-14 h-14 bg-surface-container flex items-center justify-center rounded-xl mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">park</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-3">Lawn Care</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Organic fertilizing and precision mowing schedules for a fairway-perfect finish.</p>
+<img class="w-full h-48 object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all" data-alt="close-up of vibrant green grass lawn with perfect parallel stripes from professional mowing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1YDHxUDKSCShCcoB9Q0q_pCapzo88WQjOig0Aju3MTFBhH9L9ie2L0JTcJWOp-gxQfw5eWea6hrnQoGrFy93kLZ_9mmlTYlrEzi7eyPOlsGKL13E_3T8LtPFkdobOtx6b_diHjGHeA0LUGKVheYtqv69BesTrXEbx5vRpD2FEATaeftsltqQACb2cHDQlttdOykaV4tfZWrtb6OVxgaDlK9oKh0D1gWKlAVe5OGKmiirf5-Wodkp0QBcBnOYHpOug7s2W-JyAvgA"/>
+</div>
+<!-- Service 2 -->
+<div class="group bg-surface-container-lowest p-8 rounded-[1.5rem] transition-all hover:bg-surface-container-high">
+<div class="w-14 h-14 bg-surface-container flex items-center justify-center rounded-xl mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">architecture</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-3">Landscape Design</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Master-planned blueprints that integrate native NJ flora with modern aesthetics.</p>
+<img class="w-full h-48 object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all" data-alt="overhead architectural landscape blueprint on a wooden desk with drawing tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP5ranBEU3qXq1QQMasH9PfSQNG7IHKYSYSbTPEbKZa1aaHuU466TcnypX6goHZ5gasjzf4OIHv4bk_TrWDMxjceg5adRaQaiUfwtUYwy5W9akZSxjUVjfpgE50mGxDL0kQqY6s7QcZdYKgfYS-e_8rygIoSQE8XDCAhVrIPmz-3zBo5tUL0xLNiAZMUMTPAbbqG6ZYNu8rjdX-kNwuG_6AElChGLNNd-nHjfoCZabhl9LM_AQm7CR9QP4M7IpMzOf-i-YNC16oZc"/>
+</div>
+<!-- Service 3 -->
+<div class="group bg-surface-container-lowest p-8 rounded-[1.5rem] transition-all hover:bg-surface-container-high">
+<div class="w-14 h-14 bg-surface-container flex items-center justify-center rounded-xl mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">foundation</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-3">Hardscaping</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Artisan masonry, flagstone patios, and structural retaining walls that last a lifetime.</p>
+<img class="w-full h-48 object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all" data-alt="elegant flagstone patio with a luxury outdoor fire pit and designer seating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMs3TudUW1eySi1gEPLFUbr0GMViFg-izp4b5aSDu86nl2qNYUa02waFXe0DEH9rZaDIBNbFM3wXQFxEYI7-XJTh0elSAV35jIku_ujQgRSw8bU_6vqUeG8x-cwDaychSHadxBmgVQf3RMlOQAb0dPuz_unHUttF2xX4O7MbtP_GQ1f2Ag3EH4QGM5VBjlAc0UgsMadJJdZPxdSOD7yIeQ3JfkQFecb1SBBLvHtnNWIYXVUel2s-31YiQlcYOGOX0O0SxgeREfJIU"/>
+</div>
+<!-- Service 4 -->
+<div class="group bg-surface-container-lowest p-8 rounded-[1.5rem] transition-all hover:bg-surface-container-high">
+<div class="w-14 h-14 bg-surface-container flex items-center justify-center rounded-xl mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">forest</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-3">Tree Services</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Structural pruning and professional health assessments by certified arborists.</p>
+<img class="w-full h-48 object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all" data-alt="tall oak trees with sunlight filtering through the canopy onto a manicured path" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqjSCBBaxvYYOOwK20KJ9kBPGUOGxrYThrelc85r26jCIbw-rcrC0DTUXIPZ-jJsvbuQtGVRY87pyy1R8LYmmf3JgQ2K9zY4WL49vsqDcb17QWW32ZuC-G1tSERYiEkCoZ4-6x8Q0N2lDzdC-7nQFcymzH-hrpEe1uvhrnP-LJhznGQdDvpVko1boxYWXUgyerLrf9k3sfqQZ3ocwyn4iumsf9TIPc4auPN8sM-v_2OLY285jBAvjJt2drNmWcqH5solGmGJp3iqo"/>
+</div>
+<!-- Service 5 -->
+<div class="group bg-surface-container-lowest p-8 rounded-[1.5rem] transition-all hover:bg-surface-container-high">
+<div class="w-14 h-14 bg-surface-container flex items-center justify-center rounded-xl mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">water_drop</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-3">Irrigation</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Smart water management systems that reduce waste while keeping foliage lush.</p>
+<img class="w-full h-48 object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all" data-alt="modern sprinkler system watering a vibrant garden in early morning mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsLrRaLOdSVU5PYS0zBjlFGf5HaBoYjUCFTCX_KaxkQ82a5NI6Ns55UcV-qYZPloew2I8fKDB8gJ7gbumjC58IDzMdU167jOe-hyD_I6I4LGPpIsWjwm_SALMoSt-81BW8MOp6CwmzmwYcKrDZrTMvF2mrtmIJ4B-atR3lemw-CYJOxk5UXpcUzs4cOTfMiHU9yx623KewGQ_JXeJ1W9LeFQE5Y9JdiaLACdZ1u9Oc4aRXCWMQ7KvPYELxvWQkh62OGq_FKisgrkQ"/>
+</div>
+<!-- Service 6 -->
+<div class="group bg-surface-container-lowest p-8 rounded-[1.5rem] transition-all hover:bg-surface-container-high">
+<div class="w-14 h-14 bg-surface-container flex items-center justify-center rounded-xl mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">temp_preferences_eco</span>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-3">Seasonal Cleanup</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Spring awakening and fall preparation to ensure year-round landscape health.</p>
+<img class="w-full h-48 object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all" data-alt="golden autumn leaves being neatly raked on a green lawn with a professional leaf blower in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfHYF16fvrghBeEmPf0-c_EmDnNo1fBh-rRDqnfSV2P_0G1X349T7cP0uyxMLF1RnJCXNq_q3u1NZq2vc6KjdIWvJ5N1phAioWDbQDxOxmAET13xnwwtEDzzgoJ348wrlSLR9DKNTRAOe2FiHEKziKSoau5Pquxb77nOhv_x4SSlE0_G11C-ylbaRsBNrPebhe4h0AvYYvUH7GqdI6N-nqrQoTjdKWoUJ1Lkejdfbzm-c4f7sNkJVeD7kMly4UMym_AYxt6CAy_Ng"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Why Greenway -->
+<section class="py-24 bg-surface-container">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="flex flex-col gap-4">
+<h4 class="text-primary font-black text-4xl">4.9</h4>
+<p class="text-secondary font-bold uppercase tracking-widest text-xs">Google Rating</p>
+<p class="text-on-surface-variant text-sm">Trusted by hundreds of homeowners in Edison and surrounding counties.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-primary font-black text-4xl">15+</h4>
+<p class="text-secondary font-bold uppercase tracking-widest text-xs">Years Experience</p>
+<p class="text-on-surface-variant text-sm">Decades of combined expertise in arboriculture and landscape architecture.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-primary font-black text-4xl">Zero</h4>
+<p class="text-secondary font-bold uppercase tracking-widest text-xs">Chemical Waste</p>
+<p class="text-on-surface-variant text-sm">We use 100% organic compounds to protect your family and the local ecology.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-primary font-black text-4xl">24h</h4>
+<p class="text-secondary font-bold uppercase tracking-widest text-xs">Emergency Response</p>
+<p class="text-on-surface-variant text-sm">Our tree specialists are available around the clock for storm recovery.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Recent Projects -->
+<section class="py-24 bg-surface px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center md:text-left">
+<h2 class="text-4xl md:text-5xl font-black text-primary mb-4">Portfolio of Estates</h2>
+<p class="text-on-surface-variant text-lg max-w-xl">A glimpse into the sanctuaries we've built across Central Jersey.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-[2.5rem]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="wide shot of a modern luxury estate with infinity pool and architectural gardens at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsehiJ63oWdeqJkAJSb5pVCK5dLh25_Hz-Y1cumblCXlknxKqMTbEIJhl6gOOERXj7xbZhT985RVfGTjOndnp-oLIV8vMaIfuAGKQW83zJAJDYd9FG9SZTEwcNgxVvh-S46jdqo3Xw7wfZfOJh-f0v8rWj2lEUZwU0nEIki6l5NgFl76Br6YeQKXh6lwtodzLWsIOx_LQRlRjJBLMw42SRzI0LTVzQI-Eh8YzPw0614qyAHBVnL3lMTJdcryGiWP02TJX5snRu8CU"/>
+<div class="absolute bottom-0 left-0 right-0 p-10 bg-gradient-to-t from-primary/80 to-transparent">
+<span class="text-secondary-container font-bold text-sm tracking-widest uppercase">Edison Heights</span>
+<h4 class="text-white text-3xl font-bold mt-2">The Modern Oasis</h4>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-[2rem] h-64 md:h-auto">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="formal boxwood hedges and colorful flower beds in a geometric garden layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY-3-kCjVQN-WxRpHgin5Q2xB3VEL3na3GyYMpdDSgMQeeMPYxFqRW9E0ERJNDZpVJq2wg-3_YEpjwrVUIK_ET1Fsq_2EIG8HbbRI777uybcmjJ1b8NX61et7sNveMZznIrJP-I5oWgEhHgzXq3oP2WsEpzUWK1xoCZ9jdGE6B7c4Ihbg6fIZxrJZEBZx0Zt_uSt0sGAvjsCGiduLT7uQPvU2be8iMUJe38NCBdf-Z31PGPDT49gBMyd43nenfboX8_BQwf4flCEg"/>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
+<p class="text-white font-bold text-xl">View Details</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-[2rem] h-64 md:h-auto">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="artisan flagstone path winding through a lush wooded area" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3mKmh5ntKOo_owxcljM9d9h1D7wX7wRDTSpfWMXREM3EqqOk4WWdzj6PvTyCDItHCJVooWUUXTkmmaiUbCMeVeHBGK4G9Q80ieEWUkCe-6lsrq8fZ5JUK2k_VXTQpw7PiYMSWXz-evTubbEAPlRtrfEt45RIOftMGg81jKRJT8-r6LcNEdtU9kRrwaz7Okhu7GxwshTH3oyBUYAgpYrn3lRXKibrwjvzTgItrd2gCOVicJtZshileIA4m9ZxdCt2ZZ2fHSNs96J8"/>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
+<p class="text-white font-bold text-xl">View Details</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Testimonials -->
+<section class="py-24 bg-surface-container-highest px-8">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl font-black text-primary text-center mb-16">The Greenway Experience</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-[2rem]">
+<div class="flex gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-primary italic leading-relaxed mb-8">"Greenway transformed our overgrown backyard into a true sanctuary. Their attention to detail in the stone work and tree health is unmatched in Edison."</p>
+<div>
+<p class="font-black text-primary">Sarah J.</p>
+<p class="text-sm text-on-surface-variant">Oak Tree Road Resident</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-[2rem]">
+<div class="flex gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-primary italic leading-relaxed mb-8">"Finally, a landscaping team that understands ecological balance. Our garden hasn't just looked better, it's actually healthier since they took over."</p>
+<div>
+<p class="font-black text-primary">Michael T.</p>
+<p class="text-sm text-on-surface-variant">Estate Manager</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-[2rem]">
+<div class="flex gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-primary italic leading-relaxed mb-8">"The design phase was so professional. They used 3D renderings to show us exactly how the seasons would change our new hardscape layout."</p>
+<div>
+<p class="font-black text-primary">David L.</p>
+<p class="text-sm text-on-surface-variant">Business Owner</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: CTA Banner -->
+<section class="py-20 px-8">
+<div class="max-w-7xl mx-auto bg-gradient-to-r from-primary-container to-[#2d5a3d] rounded-[3rem] p-12 md:p-20 text-center flex flex-col items-center">
+<h2 class="text-white text-4xl md:text-6xl font-black mb-8 leading-tight">Ready to curate your<br/>perfect estate?</h2>
+<p class="text-primary-fixed text-lg mb-12 max-w-xl">Schedule a private consultation with our lead landscape architect today.</p>
+<button class="bg-secondary text-on-secondary px-10 py-5 rounded-xl font-black text-xl hover:bg-secondary-container transition-all">Book Your Design Consultation</button>
+</div>
+</section>
+<!-- Section 8: Footer -->
+<footer class="bg-emerald-950 dark:bg-black w-full rounded-t-[2.5rem] mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+<div class="flex flex-col gap-6">
+<div class="font-['Epilogue'] font-black text-2xl text-white">Greenway</div>
+<p class="font-['Manrope'] leading-relaxed text-emerald-100/70">© 2024 Greenway Landscaping. Cultivating organic excellence.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-amber-400 cursor-pointer hover:text-white transition-colors">social_leaderboard</span>
+<span class="material-symbols-outlined text-amber-400 cursor-pointer hover:text-white transition-colors">camera</span>
+<span class="material-symbols-outlined text-amber-400 cursor-pointer hover:text-white transition-colors">alternate_email</span>
+</div>
+</div>
+<div>
+<h5 class="font-['Epilogue'] font-bold text-amber-400 mb-6">Services</h5>
+<ul class="flex flex-col gap-4 font-['Manrope']">
+<li class="text-emerald-100/70 hover:text-white transition-colors cursor-pointer">Estate Management</li>
+<li class="text-emerald-100/70 hover:text-white transition-colors cursor-pointer">Sustainable Design</li>
+<li class="text-emerald-100/70 hover:text-white transition-colors cursor-pointer">Hardscaping</li>
+<li class="text-emerald-100/70 hover:text-white transition-colors cursor-pointer">Tree Health</li>
+</ul>
+</div>
+<div>
+<h5 class="font-['Epilogue'] font-bold text-amber-400 mb-6">Company</h5>
+<ul class="flex flex-col gap-4 font-['Manrope']">
+<li class="text-emerald-100/70 hover:text-white transition-colors cursor-pointer">About Our Mission</li>
+<li class="text-emerald-100/70 hover:text-white transition-colors cursor-pointer">Our Team</li>
+<li class="text-emerald-100/70 hover:text-white transition-colors cursor-pointer">Project Gallery</li>
+<li class="text-emerald-100/70 hover:text-white transition-colors cursor-pointer">Contact Us</li>
+</ul>
+</div>
+<div>
+<h5 class="font-['Epilogue'] font-bold text-amber-400 mb-6">Connect</h5>
+<ul class="flex flex-col gap-4 font-['Manrope']">
+<li class="text-emerald-100/70 flex items-center gap-3">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                        Edison, NJ 08817
+                    </li>
+<li class="text-emerald-100/70 flex items-center gap-3">
+<span class="material-symbols-outlined text-sm">call</span>
+                        (732) 555-0123
+                    </li>
+<li class="text-emerald-100/70 flex items-center gap-3">
+<span class="material-symbols-outlined text-sm">mail</span>
+                        hello@greenwaylandscaping.com
+                    </li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

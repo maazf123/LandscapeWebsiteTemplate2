@@ -1,0 +1,36 @@
+{
+  "name": "projects/4032065221276871367",
+  "projectId": "4032065221276871367",
+  "title": "Greenway Landscaping",
+  "visibility": "PRIVATE",
+  "deviceType": "DESKTOP",
+  "designTheme": {
+    "displayName": "The Elevated Arborist",
+    "colorMode": "LIGHT",
+    "font": "EPILOGUE",
+    "headlineFont": "EPILOGUE",
+    "bodyFont": "MANROPE",
+    "labelFont": "MANROPE",
+    "roundness": "ROUND_EIGHT",
+    "customColor": "#144227",
+    "overridePrimaryColor": "#144227",
+    "overrideSecondaryColor": "#795900",
+    "overrideTertiaryColor": "#652707",
+    "overrideNeutralColor": "#144227",
+    "colorVariant": "FIDELITY",
+    "spacingScale": 3
+  },
+  "screens": {
+    "homepage": {
+      "id": "5d0c4451104f460fbb3ddf22e3e20923",
+      "sourceScreen": "projects/4032065221276871367/screens/5d0c4451104f460fbb3ddf22e3e20923",
+      "x": 0,
+      "y": 0,
+      "width": 2560,
+      "height": 10970,
+      "title": "Greenway Landscaping - The Elevated Arborist",
+      "screenshotUrl": "https://lh3.googleusercontent.com/aida/ADBb0uiIzYmpJcF_U7iTsZEP2whc21J8N8tTN41vslVUciBaC9yLsAg6MG8jkQ9oiQCTvjspZ0gd-EGQgFq-lJ6z7iXXDrFfTsvqhMS2QZ_fXlJuDjJyYfby6BOC4PiocFGOt8vHP1X1F1PU5d0QGPtRas0AXQIfLfIJPV95UtEWnbb4UVdqpBHYOzVHtBJEw4mPTQUGlNlPqKrBxS17tQr-4l9RDSPS1wa6LKOX5frgbdn1bLJETPb9SBgxr0s",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2Q1ZWM3NTI2ZjEyZjQ3NDJhNjJkNzM3MmU1NjEwNTYzEgsSBxCm5c6t-BAYAZIBIwoKcHJvamVjdF9pZBIVQhM0MDMyMDY1MjIxMjc2ODcxMzY3&filename=&opi=96797242"
+    }
+  }
+}
