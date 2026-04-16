@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -34,9 +34,8 @@ export default function Navbar() {
         }`}
       >
         <a href="#" className="flex items-center gap-2">
-          <Leaf className="w-6 h-6 text-primary-container" strokeWidth={2.5} />
           <span className="font-headline font-black text-xl text-primary">
-            Greenway
+            template 2
           </span>
         </a>
 

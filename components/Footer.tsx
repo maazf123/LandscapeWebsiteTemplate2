@@ -1,4 +1,4 @@
-import { Leaf, MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const serviceLinks = [
   "Lawn Care",
@@ -24,9 +24,8 @@ export default function Footer() {
         {/* Company Info */}
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-2">
-            <Leaf className="w-6 h-6 text-[#a1d2ad]" strokeWidth={2.5} />
             <span className="font-headline font-black text-2xl text-white">
-              Greenway
+              template 2
             </span>
           </div>
           <p className="leading-relaxed text-[#a1d2ad]/70">
@@ -98,7 +97,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="px-8 pt-16 pb-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-[#a1d2ad]/50">
-          <p>&copy; {new Date().getFullYear()} Greenway Landscaping. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} template 2. All rights reserved.</p>
           <p>
             Designed by{" "}
             <span className="text-[#fed174] font-bold">

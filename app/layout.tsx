@@ -17,7 +17,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Greenway Landscaping | Edison, NJ | Premium Landscape Design",
+  title: "template 2 | Edison, NJ | Premium Landscape Design",
   description:
     "Edison's premier landscaping company. Lawn care, landscape design, hardscaping, tree services, irrigation, and seasonal cleanup. Get a free estimate today.",
 };

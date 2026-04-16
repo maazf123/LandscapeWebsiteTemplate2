@@ -18,7 +18,8 @@ export default function Home() {
       <Testimonials />
       <footer
         style={{
-          backgroundColor: '#07381e',
+          background:
+            'radial-gradient(ellipse at 30% 0%, #0a3f22 0%, #07381e 55%, #06331b 100%)',
           position: 'relative',
           zIndex: 1,
           isolation: 'isolate',

@@ -5,7 +5,7 @@ import ScrollReveal from "./ScrollReveal";
 
 const testimonials = [
   {
-    quote: "Greenway transformed our overgrown backyard into a true sanctuary. Their attention to detail in the stone work and tree health is unmatched in Edison.",
+    quote: "template 2 transformed our overgrown backyard into a true sanctuary. Their attention to detail in the stone work and tree health is unmatched in Edison.",
     name: "Sarah J.",
     role: "Oak Tree Road Resident",
   },
@@ -27,7 +27,7 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
           <h2 className="text-3xl font-headline font-black text-primary text-center mb-16">
-            The Greenway Experience
+            The template 2 Experience
           </h2>
         </ScrollReveal>
 
