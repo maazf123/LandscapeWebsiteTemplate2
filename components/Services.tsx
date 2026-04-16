@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { Trees, Compass, Hammer, TreePine, Droplets, Sparkles } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
@@ -51,95 +49,21 @@ const services = [
   },
 ];
 
-function FoliageLayer({
-  src,
-  className,
-  speed,
-  sectionRef,
-  maskGradient,
-}: {
-  src: string;
-  className: string;
-  speed: number;
-  sectionRef: React.RefObject<HTMLElement | null>;
-  maskGradient: string;
-}) {
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
-
-  const rawY = useTransform(scrollYProgress, [0, 1], [0, speed]);
-  const y = useSpring(rawY, { stiffness: 100, damping: 30, mass: 0.5 });
-
-  return (
-    <motion.div
-      className={`absolute pointer-events-none hidden lg:block ${className}`}
-      style={{
-        y,
-        willChange: "transform",
-        backgroundImage: `url(${src})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        maskImage: maskGradient,
-        WebkitMaskImage: maskGradient,
-        maskComposite: "intersect" as never,
-        WebkitMaskComposite: "source-in" as never,
-        filter: "blur(0.5px)",
-      }}
-      aria-hidden="true"
-    />
-  );
-}
-
 export default function Services() {
-  const sectionRef = useRef<HTMLElement>(null);
-
   return (
     <section
-      ref={sectionRef}
       id="services"
       className="relative pt-56 pb-24 bg-surface px-8 overflow-hidden -mt-[120px]"
     >
-      {/* Single gradient handling the full hero→services blend via overlap */}
+      {/* Simple gradient for hero→services blend */}
       <div
         className="absolute top-0 left-0 right-0 h-[200px] pointer-events-none z-[5]"
         style={{
-          background: `linear-gradient(to bottom,
-            rgba(20,66,39,0.95) 0%,
-            rgba(35,79,51,0.7) 20%,
-            rgba(59,104,73,0.4) 40%,
-            rgba(101,163,122,0.2) 60%,
-            rgba(180,230,192,0.08) 80%,
-            transparent 100%
-          )`,
+          background: `linear-gradient(to bottom, #144227 0%, transparent 100%)`,
         }}
       />
 
-      {/* Parallax foliage layers — masked edges, purely atmospheric */}
-      <FoliageLayer
-        src="/images/foliage-left.png"
-        className="top-0 left-0 w-[20%] h-full opacity-[0.10]"
-        speed={-40}
-        sectionRef={sectionRef}
-        maskGradient="linear-gradient(to right, black 0%, black 30%, transparent 85%), linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)"
-      />
-      <FoliageLayer
-        src="/images/foliage-right.png"
-        className="top-0 right-0 w-[20%] h-full opacity-[0.10]"
-        speed={-30}
-        sectionRef={sectionRef}
-        maskGradient="linear-gradient(to left, black 0%, black 30%, transparent 85%), linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)"
-      />
-      <FoliageLayer
-        src="/images/foliage-top.png"
-        className="top-0 left-[8%] right-[8%] w-[84%] h-[300px] opacity-[0.06]"
-        speed={-15}
-        sectionRef={sectionRef}
-        maskGradient="linear-gradient(to bottom, black 0%, black 15%, transparent 80%), linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)"
-      />
-
-      {/* Content — clean and centered, above everything */}
+      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto">
         <ScrollReveal>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">

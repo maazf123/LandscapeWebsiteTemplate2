@@ -16,8 +16,17 @@ export default function Home() {
       <WhyUs />
       <Portfolio />
       <Testimonials />
-      <EstimateForm />
-      <Footer />
+      <footer
+        style={{
+          backgroundColor: '#07381e',
+          position: 'relative',
+          zIndex: 1,
+          isolation: 'isolate',
+        }}
+      >
+        <EstimateForm />
+        <Footer />
+      </footer>
     </>
   );
 }

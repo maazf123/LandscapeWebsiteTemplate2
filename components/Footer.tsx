@@ -19,17 +19,17 @@ const companyLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-inverse-surface w-full">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+    <div className="pt-24 pb-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
         {/* Company Info */}
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-2">
-            <Leaf className="w-6 h-6 text-inverse-primary" strokeWidth={2.5} />
+            <Leaf className="w-6 h-6 text-[#a1d2ad]" strokeWidth={2.5} />
             <span className="font-headline font-black text-2xl text-white">
               Greenway
             </span>
           </div>
-          <p className="leading-relaxed text-inverse-on-surface/70">
+          <p className="leading-relaxed text-[#a1d2ad]/70">
             Cultivating organic excellence for premium estates across Central
             New Jersey since 2009.
           </p>
@@ -37,7 +37,7 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h5 className="font-headline font-bold text-secondary-container mb-6">
+          <h5 className="font-headline font-bold text-[#fed174] mb-6">
             Company
           </h5>
           <ul className="flex flex-col gap-4">
@@ -45,7 +45,7 @@ export default function Footer() {
               <li key={link.label}>
                 <a
                   href={link.href}
-                  className="text-inverse-on-surface/70 hover:text-white transition-colors cursor-pointer"
+                  className="text-[#a1d2ad]/70 hover:text-white transition-colors cursor-pointer"
                 >
                   {link.label}
                 </a>
@@ -56,7 +56,7 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h5 className="font-headline font-bold text-secondary-container mb-6">
+          <h5 className="font-headline font-bold text-[#fed174] mb-6">
             Services
           </h5>
           <ul className="flex flex-col gap-4">
@@ -64,7 +64,7 @@ export default function Footer() {
               <li key={service}>
                 <a
                   href="#services"
-                  className="text-inverse-on-surface/70 hover:text-white transition-colors cursor-pointer"
+                  className="text-[#a1d2ad]/70 hover:text-white transition-colors cursor-pointer"
                 >
                   {service}
                 </a>
@@ -75,19 +75,19 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h5 className="font-headline font-bold text-secondary-container mb-6">
+          <h5 className="font-headline font-bold text-[#fed174] mb-6">
             Contact
           </h5>
           <ul className="flex flex-col gap-4">
-            <li className="text-inverse-on-surface/70 flex items-center gap-3">
+            <li className="text-[#a1d2ad]/70 flex items-center gap-3">
               <MapPin className="w-4 h-4 shrink-0" />
               Edison, NJ 08817
             </li>
-            <li className="text-inverse-on-surface/70 flex items-center gap-3">
+            <li className="text-[#a1d2ad]/70 flex items-center gap-3">
               <Phone className="w-4 h-4 shrink-0" />
               (732) 555-0123
             </li>
-            <li className="text-inverse-on-surface/70 flex items-center gap-3">
+            <li className="text-[#a1d2ad]/70 flex items-center gap-3">
               <Mail className="w-4 h-4 shrink-0" />
               hello@greenwaylandscaping.com
             </li>
@@ -96,17 +96,17 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="px-8 py-6">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-inverse-on-surface/50">
+      <div className="px-8 pt-16 pb-6">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-[#a1d2ad]/50">
           <p>&copy; {new Date().getFullYear()} Greenway Landscaping. All rights reserved.</p>
           <p>
             Designed by{" "}
-            <span className="text-secondary-container font-bold">
+            <span className="text-[#fed174] font-bold">
               Your Agency
             </span>
           </p>
         </div>
       </div>
-    </footer>
+    </div>
   );
 }

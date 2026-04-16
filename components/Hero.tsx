@@ -82,7 +82,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          className="w-full flex flex-wrap justify-center md:justify-start gap-8 md:gap-12 pt-12 border-t border-white/10"
+          className="w-full flex flex-wrap justify-center md:justify-start gap-8 md:gap-12 pt-12"
         >
           {trustBadges.map((badge) => (
             <div
